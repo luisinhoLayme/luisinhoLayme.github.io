@@ -350,7 +350,7 @@ footer .redes-sociales .instagram:hover {
 	}
 
 	header .menu {
-		position: absolute;
+		position: fixed;
 		left: -100vw;
 		top: -32px;
 		background: #000;
