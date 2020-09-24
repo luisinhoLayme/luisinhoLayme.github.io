@@ -299,8 +299,8 @@ footer .redes-sociales .instagram:hover {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	left: 10px;
-	top: 10px;
+	left: 13px;
+	top: 13px;
 	border-radius: 1000px;
 	text-align: center;
 	display: none;
@@ -332,6 +332,11 @@ footer .redes-sociales .instagram:hover {
 }
 
 @media screen and (max-width: 526px) {
+	header .contenedor-texto{
+		margin: 149px 0;
+		transition: .5s ease all;
+	}
+
 	header .contenedor-texto .texto .nombre{
 		font-size: 35px
 	}
@@ -346,18 +351,19 @@ footer .redes-sociales .instagram:hover {
 
 	header .menu {
 		position: absolute;
-		left: 6px;
+		left: -100vw;
 		top: -32px;
-		background: rgba(0,0,0,.8);
-		width: calc(100vw - 14px);
+		background: #000;
+		width: calc(100vw - 16px);
 		height: 100vh;
 		padding-top: 50px;
 		z-index: 900;
-		opacity: .8;
+		opacity: .4;
+		transition: .5s ease all;
 	}
 
 	header .menu.active {
-		left: 6px;
+		left: 8px;
 	}
 
 	header .menu a {
@@ -374,7 +380,7 @@ footer .redes-sociales .instagram:hover {
 }
 
 @media screen and (max-width: 410px) {
-	header .contenedor .menu{
+	/*header .contenedor .menu{
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0px;
@@ -382,10 +388,11 @@ footer .redes-sociales .instagram:hover {
 	
 	header .contenedor .menu a{
 		margin-bottom: 30px;
-	}
+	}*/
 	
 	header .contenedor-texto{
-		margin: 90px 0;
+		margin: 149px 0;
+		transition: .5s ease all;
 	}
 	
 	header .contenedor-texto .texto{
