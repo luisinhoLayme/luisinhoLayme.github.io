@@ -294,6 +294,31 @@ footer .redes-sociales .instagram:hover {
 	background: #3f729b;
 }
 
+.btn-burger {
+	background: rgba(0,0,0,.5);
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	border-radius: 1000px;
+	text-align: center;
+	display: none;
+	z-index: 1000;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-burger:hover {
+	background: rgba(0,0,0,1);
+}
+
+.btn-burger i {
+	font-size: 18px;
+	line-height: 40px;
+	color: #fff;
+}
+
 /*-----MEDIA QUERRY-----*/
 
 @media screen and (max-width: 800px) {
@@ -314,11 +339,38 @@ footer .redes-sociales .instagram:hover {
 	header .contenedor-texto .texto .profecion{
 		font-size: 18px;
 	}
+
+	.btn-burger {
+		display: block;
+	}
+
+	header .menu {
+		position: absolute;
+		left: 6px;
+		top: -32px;
+		background: rgba(0,0,0,.8);
+		width: calc(100vw - 14px);
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 900;
+		opacity: .8;
+	}
+
+	header .menu.active {
+		left: 6px;
+	}
+
+	header .menu a {
+		display: block;
+		background: #393737;
+		margin-bottom: 3px;
+	}
 	
 	footer .redes-sociales .contenedor{
 		flex-wrap: wrap;
 		padding: 20px;
 	}
+
 }
 
 @media screen and (max-width: 410px) {
