@@ -10,13 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<span class="btn-burger" id="btn-burger"><i class="fa fa-bars"></i></span>
+	<span class="btn-burger-abrir" id="btn-burger-abrir"><i class="fa fa-bars"></i></span>
+	<span class="btn-burger-cerrar" id="btn-burger-cerrar"><i class="fa fa-times"></i></span>
 	<header>
 		<div class="contenedor">
 			<nav class="menu">
-				<a href="#">Acerca de</a>
-				<a href="#">Trabajos</a>
-				<a href="#">Contactos</a>
+				<a href="#acerca-de">Acerca de</a>
+				<a href="#trabajos">Trabajos</a>
+				<a href="#contacto">Contactos</a>
 			</nav>
 		
 			<div class="contenedor-texto">
@@ -29,7 +30,7 @@
 	</header>
 	
 	<section class="main">
-		<section class="acerca-de">
+		<section class="acerca-de" id="acerca-de">
 			<div class="contenedor">
 				<div class="foto">
 					<img src="img/luisinho.jpg" width="115" alt="Luisinho Layme">
@@ -46,7 +47,7 @@
 			</div>
 		</section>
 		
-		<section class="trabajos">
+		<section class="trabajos" id="trabajos">
 			<div class="contenedor">
 				<h3 class="titulo">Trabajos</h3>
 				<div class="contenedor-trabajos">
@@ -128,7 +129,7 @@
 	</section>
 	
 	<footer>
-		<section class="contacto">
+		<section class="contacto" id="contacto">
 			<div class="contenedor">
 				<h3 class="titulo">Contacto</h3>
 				<form class="formulario" action="">

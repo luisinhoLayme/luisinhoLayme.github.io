@@ -294,14 +294,14 @@ footer .redes-sociales .instagram:hover {
 	background: #3f729b;
 }
 
-.btn-burger {
-	background: rgba(0,0,0,.5);
-	width: 40px;
-	height: 40px;
+.btn-burger-abrir {
+	background: rgba(222,222,222,9);
+	width: 38px;
+	height: 38px;
 	position: fixed;
 	left: 13px;
 	top: 13px;
-	border-radius: 1000px;
+	border-radius: 5px;
 	text-align: center;
 	display: none;
 	z-index: 1000;
@@ -309,14 +309,48 @@ footer .redes-sociales .instagram:hover {
 	transition: .3s ease all;
 }
 
-.btn-burger:hover {
-	background: rgba(0,0,0,1);
+.btn-burger-abrir:hover {
+	background: rgba(122,112,111,1);
 }
 
-.btn-burger i {
+.btn-burger-abrir i {
 	font-size: 18px;
 	line-height: 40px;
-	color: #fff;
+	color: #000;
+}
+
+.btn-burger-abrir i:hover {
+	color: #ccc;
+}
+
+.btn-burger-cerrar {
+	background: rgba(222,222,222,9);
+	width: 38px;
+	height: 38px;
+	position: fixed;
+	left: 13px;
+	top: 13px;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+	z-index: 1000;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-burger-cerrar:hover {
+	background: rgba(122,112,111,1);
+}
+
+.btn-burger-cerrar i {
+	font-size: 26px;
+	font-weight: normal;
+	line-height: 40px;
+	color: #000;
+}
+
+.btn-burger-cerrar i:hover {
+	color: #ccc;
 }
 
 /*-----MEDIA QUERRY-----*/
@@ -345,7 +379,7 @@ footer .redes-sociales .instagram:hover {
 		font-size: 18px;
 	}
 
-	.btn-burger {
+	.btn-burger-abrir {
 		display: block;
 	}
 
@@ -353,12 +387,11 @@ footer .redes-sociales .instagram:hover {
 		position: fixed;
 		left: -100vw;
 		top: -32px;
-		background: #000;
+		background: linear-gradient(#9E79BF, #fff);
 		width: calc(100vw - 16px);
 		height: 100vh;
 		padding-top: 50px;
 		z-index: 900;
-		opacity: .4;
 		transition: .5s ease all;
 	}
 
@@ -368,8 +401,13 @@ footer .redes-sociales .instagram:hover {
 
 	header .menu a {
 		display: block;
-		background: #393737;
+		background: rgba(222,222,222,.6);
+		border-radius: 3px;
 		margin-bottom: 3px;
+	}
+
+	header .menu a:hover {
+		background: rgba(222,222,222,.9);
 	}
 	
 	footer .redes-sociales .contenedor{
